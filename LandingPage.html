@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Building A Landing Page for freecodecamp.org</title><br>
+      <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+          <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+    <style>
+
+        body {
+          font-family: "Itim";
+          font-size: 20px;
+          background-color: white;
+        }
+
+        header {
+          position: fixed;
+          top: 0;
+          width: 100%;
+          height: 100px;
+          /* padding: 10px 0; */
+          display: flex;
+          background-color: #274037;
+          justify-content: flex-start;
+          align-items: center;
+          opacity: 0.95;
+          }
+
+        a:link {
+          color: white;
+          text-decoration: none;
+        }
+        li:hover {
+          background-color: black;
+          text-decoration: none;
+        }
+        a:visited {
+          color: green;
+          text-decoration: none;
+        }
+        li {
+          float: right;
+          /* border-right: 1px solid white; */
+          display: inline;
+          padding-right: 50px;
+          list-style-type: none;
+        }
+        @media (max-width: 500px) {
+          header {
+            flex-wrap: wrap;
+          }
+        }
+
+/* all css after this line is CSS under the nav bar */
+
+        #seeds {
+          margin: auto;
+          padding-top: 20rem;
+          text-align: center;
+          max-width: 600px;
+          padding-bottom: 10rem;
+        }
+        #myanmar-farm {
+          display: flex;
+          padding-left: 25rem;
+          max-width: 940px;
+          margin-bottom: 100px;
+          width: 100%;
+          background-color: black;
+        }
+        h2 {
+          text-align: center;
+          background-color: #f7a908;
+          border-radius: 95%;
+        }
+        form {
+          margin: auto;
+          max-width: 500px;
+          text-align: center;
+          padding-bottom: 25px;
+          border-style: outset;
+          border-width: thick;
+          border-radius: 50%;
+          border-color: #f7a908;
+        }
+    </style>
+  </head>
+  <body>
+    <header id="header">
+      <div class="logo">
+          <img id="header-img"
+                          src="https://github.com/unlimited-element/Build-a-Product-Landing-Page/blob/Images/Plantergy%20Transparent.png?raw=true"
+                          alt="plantergy logo"
+                          border="0"
+                          width="100">
+      </div>
+      <nav id="nav-bar">
+        <ul>
+          <li><a class="nav-link" href="#email">Request A Sample</a></li>
+          <li><a class="nav-link" href="#myanmar-farm">Myanmar Farm Video</a></li>
+          <li><a class="nav-link" href="#seeds">Seeds</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section id="seeds">
+          <h2>Garden Seeds</h2>
+          <p>Our highly reviewed garden seeds will bring you the garden of your dreams</p>
+          <h2>Jumbo Seeds</h2>
+          <p>These exclusive seeds imported from the subtropical forest of Myanmar will produce that largest crops known to the Western Hemisphere</p>
+          <h2>Flower Seeds</h2>
+          <p>The largest assortment of flower seeds in the nation</p>
+    </section>
+
+    <section id="myanmar-farm">
+          <iframe id="video"
+                  width="500"
+                  height="300"
+                  src="https://www.youtube.com/embed/gunZx1IK9Bs"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen>
+          </iframe>
+    </section>
+
+    <form id="form" action="https://www.freecodecamp.com/email-submit">
+      <h3>Request Sample</h3>
+      <label for="name-label">
+        <input id="name"
+                type="name"
+                name="name"
+                placeholder="Full Name"
+                required>
+      </label>
+      <label for="address-label">
+        <input id="address"
+                type="address"
+                name="address"
+                placeholder="Address"
+                required>
+      </label>
+      <label for="email-label">
+        <input id="email"
+              type="email"
+              name="email"
+              placeholder="Email Address"
+              required>
+      </label>
+      <input id="submit" type="submit">
+    </form>
+  </body>
+
+</html>
